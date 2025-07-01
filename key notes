@@ -1,25 +1,8 @@
+Rule-based logic: Start by implementing rule-based responses. This means your chatbot will use predetermined responses to specific queries. Think of it as a sophisticated "if-then" logic: if the user asks "X," then the chatbot responds with "Y." This approach is ideal for handling frequently asked questions about financial data.
 
-Actual Data Extraction:
+State management: Even in a simple chatbot, managing the conversation's state is important. This involves remembering the context of the conversation or the user's previous queries to make responses more relevant and personalized.
 
-Replace mock data with real extraction logic from filings (search for <ix:nonNumeric> tags in XBRL or financial tables in HTML).
-
-Recommended tool: xbrl library for parsing XBRL.
-
-Customization:
-
-Add more companies by including their CIK (find via SEC Company Lookup).
-
-Adjust fiscal years based on filing dates.
-
-Sample Output File:
-Download mock CSV example (replace with real script output).
-
-For Accurate Results
-Use pre-built financial APIs if parsing is complex:
-
-Alpha Vantage (free tier available)
-
-FinancialModelingPrep API
+Error handling: Prepare your chatbot to handle unrecognized queries gracefully. It should inform users when it doesn't understand a question and guide them towards queries that it can respond to.
 
 Example API call for AAPL:
 import requests
