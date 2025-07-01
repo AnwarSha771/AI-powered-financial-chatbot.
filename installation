@@ -1,0 +1,9 @@
+Data Source: Use the SEC EDGAR database (free, official source for filings).
+
+Tools Required:
+Python with libraries: requests, BeautifulSoup, pandas, sec-edgar-downloader
+
+Install necessary libraries:
+bash
+Pip install sec-edgar-downloader beautifulsoup4 pandas
+
